@@ -23,10 +23,9 @@
 {% endblock header %}
     <main id="main-content">
         {% block body %}
-
             
+            {# Test in the right folder from local ##} 
             {% include_dnd_partial path="../sections/sample-section.html"%}
-            
             
         {% endblock body %}
     </main>
@@ -34,4 +33,5 @@
 {% block footer %}
     {% global_partial path="../partials/footer.html" %}
 {% endblock footer %}
+{{ standard_footer_includes }}
 </html>

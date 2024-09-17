@@ -8,5 +8,10 @@
 
 {% extends "./layouts/base.html" %}
 
+{% block body %}
+  {% dnd_area "main_area" %}
 
-  {% include_dnd_partial path="../sections/sample-section.html"%}
+    {% include_dnd_partial path="../sections/sample-section.html"%}
+
+    {% end_dnd_area %}    
+{% endblock body %}
