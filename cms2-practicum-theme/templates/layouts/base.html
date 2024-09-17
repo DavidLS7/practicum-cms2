@@ -21,17 +21,13 @@
 {% block header %}
     {% global_partial path="../partials/header.html" %}
 {% endblock header %}
-    {# Sections  #} 
-    {% block body %}
-        <main id="main-content">
+    <main id="main-content">
         {% block body %}
-            {# 
-                Sections 
-            #}
+            
         {% endblock body %}
-        </main>
+    </main>
 {# Footer #}
 {% block footer %}
     {% global_partial path="../partials/footer.html" %}
-{% endblock header %}
+{% endblock footer %}
 </html>
