@@ -1,0 +1,62 @@
+[ {
+  "id" : "11f88e84-7f51-a115-6851-a4d592302406",
+  "name" : "turtle",
+  "display_width" : null,
+  "label" : "turtle",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "d048b573-d624-f898-456f-c8bd932adfb9",
+    "name" : "turtle_name",
+    "display_width" : null,
+    "label" : "Turtle Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Leonardo"
+  }, {
+    "id" : "14c46607-247f-2fd1-28d6-dd73b7550b9a",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Leonardo leads!"
+  }, {
+    "id" : "f298d6bb-80d6-77bd-da26-a31c45c62af1",
+    "name" : "turtle_image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://145435241.fs1.hubspotusercontent-eu1.net/hubfs/145435241/leonardo.webp",
+      "alt" : "leonardo",
+      "loading" : "lazy",
+      "width" : 631,
+      "height" : 786,
+      "max_width" : 631,
+      "max_height" : 786
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]

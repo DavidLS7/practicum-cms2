@@ -1,0 +1,15 @@
+<div class="TNMT-container">
+  {% for item in module.turtle %}  
+  <div class="card">
+    <h1>
+        {{ item.turtle_name }}
+    </h1>
+    <img src="{{ item.turtle_image.src }}" 
+         srcset="{{ resize_image_url('{{ item.turtle_image.src }}', 0, 0, 300) }}" 
+         a/>
+    <p>
+      {{ item.description }}
+    </p>
+  </div>
+  {% endfor %}
+</div>

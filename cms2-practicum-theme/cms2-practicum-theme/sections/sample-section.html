@@ -1,0 +1,31 @@
+<!--
+ templateType: section
+ label: Banner
+ description: "A banner typically used at the top of a page highlighting a product or main topic."
+ isAvailableForNewContent: true
+ screenshotPath: ../images/section-previews/banner.png
+-->
+{% dnd_section %}
+  
+    {% dnd_column %}
+      {% dnd_row %}
+        {% dnd_module path='@hubspot/rich_text' %}
+          {% module_attribute 'html' %}
+            <div style="text-align: center">
+              {{ context.content || '<h1 style="color: #fff;">Communicate <span style="font-weight: 400;">Your Way</span></h1><p style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus posuere mi, in pretium ante posuere a. Aliquam a risus at eros molestie pretium.</p>' }}
+            </div>
+          {% end_module_attribute %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+      {% dnd_row %}
+        {% dnd_module
+          path='../modules/button',
+          button_text={{ context.buttonText || 'Subscribe' }}
+          horizontal_alignment='CENTER'
+        %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+    {% end_dnd_column %}
+  
+{% end_dnd_section %}
+
